@@ -16,24 +16,13 @@
 
 <body>
     <script>
-        //        function reveal() {
-        //            var reveals = document.querySelectorAll(".arrowAnim");
-        //            var when = document.querySelectorAll("top");
-        //
-        //            for (var i = 0; i < reveals.length; i++) {
-        //                var windowHeight = window.innerHeight;
-        //                var elementTop = when[i].getBoundingClientRect().top;
-        //                var elementVisible = 1000;
-        //
-        //                if (elementTop > windowHeight - elementVisible) {
-        //                    reveals[i].classList.add("active");
-        //                } else {
-        //                    reveals[i].classList.remove("active");
-        //                }
-        //            }
-        //        }
-
-
+        
+        function moreCards() {
+            document.getElementById("hiddenCards").style.visibility = "visible";
+            document.getElementById("hiddenCards").style.position = "relative";
+            document.getElementById("button").style.visibility = "hidden";
+            
+        }
 
         function fade() {
             
@@ -128,12 +117,12 @@
                 <li><a href="Accueil.html">Accueil</a></li>
                 <li><a href="#" aria-haspopup="true">Personnages</a>
                     <ul class="dropdown" aria-label="submenu">
-                        <li><a href="../Pages/characters/Thyra.html">Thyra</a></li>
-                        <li><a href="../Pages/characters/Ambrosia.html">Ambrosia</a></li>
-                        <li><a href="../Pages/characters/Pyra.html">Pyra</a></li>
-                        <li><a href="../Pages/characters/Klomilia.html">Klomilia</a></li>
-                        <li><a href="../Pages/characters/Misha.html">Misha</a></li>
-                        <li><a href="../Pages/characters/Lya.html">Liannerya</a></li>
+                        <li><a href="Thyra.html">Thyra</a></li>
+                        <li><a href="Ambrosia.html">Ambrosia</a></li>
+                        <li><a href="Pyra.html">Pyra</a></li>
+                        <li><a href="Klomilia.html">Klomilia</a></li>
+                        <li><a href="Misha.html">Misha</a></li>
+                        <li><a href="Lya.html">Liannerya</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Campagnes</a>
@@ -153,7 +142,7 @@
 
         <section class="CardsContainer">
             
-            <a href="../Pages/characters/Pyra.html">
+            <a href="Pyra.html">
             <div class="cards pyra">
                 <div class="portrait pyra">
 
@@ -172,7 +161,7 @@
                 </div>
                 </div></a>
 
-            <a href="../Pages/characters/Ambrosia.html">
+            <a href="Ambrosia.html">
             <div class="cards ambrosia">
                 <div class="portrait ambrosia">
 
@@ -191,7 +180,7 @@
                 </div>
                 </div></a>
             
-            <a href="../Pages/characters/Thyra.html">
+            <a href="../Pages/Thyra.html">
              <div class="cards thyraa">
                 <div class="portrait thyraa">
 
@@ -202,7 +191,7 @@
                     <div class="hidCit">
                         <p>&laquo; Les Weasley sauf que miraculeusement certains ont les cheveux qui sont devenus blancs. Oh et en viking aussi. &raquo;</p>
                         
-                        <h5> Alice, joueur</h5>
+                        <h5> Alice, joueuse</h5>
                         
                     </div>
                     
@@ -210,7 +199,7 @@
                 </div>
                 </div></a>
             
-            <a href="../Pages/characters/Klomilia.html">
+            <a href="../Pages/Klomilia.html">
             <div class="cards klomilia">
                 <div class="portrait klomilia">
 
@@ -229,7 +218,7 @@
                 </div>
                 </div></a>
             
-            <a href="../Pages/characters/Lya.html">
+            <a href="../Pages/Lya.html">
             <div class="cards lya">
                 <div class="portrait lya">
 
@@ -238,9 +227,9 @@
                     <h2 class="lya">Liannerya <span class="familyName">Daldek</span></h2>
 
                     <div class="hidCit">
-                        <p>&laquo; Daddy issues, secrets et se prendre half-damage pour aucune raison, ne cherchez pas plus loin, c'est Ambrosia. &raquo;</p>
+                        <p>&laquo; RIP Lya, on t'aimait mais Stradh aussi. Aussi tu t'es légèrement suicidé soo tant pis pour toi. &raquo;</p>
                         
-                        <h5> Célestin, joueur</h5>
+                        <h5> La Vie</h5>
                         
                     </div>
                     
@@ -248,7 +237,7 @@
                 </div>
                 </div></a> 
 
-            <a href="../Pages/characters/Misha.html">
+            <a href="../Pages/Misha.html">
             <div class="cards misha">
                 <div class="portrait misha">
 
@@ -267,9 +256,32 @@
                 </div>
                 </div></a>
             
+        <div class="hiddenCards" id="hiddenCards">
+            
+            <a href="../Pages/valarei.html">
+            <div class="cards valarei">
+                <div class="portrait valarei" style="background-size: cover;">
 
+                    <h4>One Shot</h4>
+
+                    <h2 class="valarei"> Valarei <span class="familyName">Quorion</span></h2>
+
+                    <div class="hidCit">
+                        <p>&laquo; Une emo psychopathe avec des grand-maman issues: Quoi de mieux pour décrire la meilleur de toutes les amies? &raquo;</p>
+                        
+                        <h5> Pinpin le Lapin </h5>
+                        
+                    </div>
+                    
+                    <h3 class="misha">Eladrin | Rogue 7</h3>
+                </div>
+                </div></a>
+            
+        </div>
 
         </section>
+        
+        <button id="button" onclick="moreCards()" class="VoirPlus">See more</button>
     </main>
     <!-- https://ddb.ac/characters/81502983/ITX0q9 -->
     <!--    style="background: linear-gradient(to right, rgba(255,255,255,0.6), #5599bb), url('../Thyra/thyra.png') ; " -->

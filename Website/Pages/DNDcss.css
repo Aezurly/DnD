@@ -464,6 +464,32 @@ ul li ul li {
     z-index: 1;
 }
 
+.hiddenCards {
+    visibility: hidden;
+    position:absolute;
+}
+
+.VoirPlus {
+    margin: 0px 45vw;
+    background: #0000;
+    color:white;
+    font-family: 'Noto Sans';
+    font-weight: 100;
+    font-size: 120%;
+    text-align: center;
+    border: 1px solid #fffa;
+    border-radius: 25px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.VoirPlus:hover {
+    transform: scale(110%);
+    background: #c33;
+    transition: all 0.5s ease;
+}
+
 .hidCit {
     font-family: 'Noto Sans';
     margin: 35px 0px;
@@ -630,13 +656,19 @@ ul li ul li {
     }   
 
 .klomilia {
-    --accent-color : #da3 ;
-    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 80%, var(--accent-color ) 85%, #d41 100%), url('../images/character-cards/klomilia.png');
+    --accent-color : #153d35 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 82%, var(--accent-color ) 88%, #fb5607 98%, #331d13 110%), url('../images/character-cards/klomilia.png');
     --bg-color : #1F110E ;
     --name-margin : 35px;
     --name-size : 330%;
     --fam-name-size : 110%;
     --bg-position : 50% 100%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #e76f51 25%, #f4a261 40%, #e9c46a 55%, #2a9d8f 65%, #264653 80%);
+    --title-pos : 75vh;
+    --imagefilter : #f4a2610a;
+    --color-neon : #e9c46a;
+    --image-bg : url('../images/character/klomilia.png');
+    --banniere-pos : 50% 30%;
 }
 
 .lya {
@@ -646,13 +678,14 @@ ul li ul li {
     --name-margin : 100px 0px 32px;
     --name-size : 400%;
     --fam-name-size : 80%;
+    --transY : 20px;
     --bg-position : bottom;
     --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
     --title-pos : 70vh;
     --imagefilter : #5477B800;
     --color-neon : #5477B8;
     --image-bg : url('../images/character/lya.png');
-    --banniere-pos : 50%
+    --banniere-pos : 50%;
 }
 
 .misha {
@@ -669,10 +702,24 @@ ul li ul li {
     --imagefilter : #f2848210;
     --color-neon : #f28482;
     --image-bg : url('../images/character/misha.png');
-    --banniere-pos : 50% 0%
+    --banniere-pos : 50% 0%;
 }
 
-
+.valarei {
+    --accent-color : #231942 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 55%, #000, #6d6875 80%,  var(--accent-color ) 95%), url('../images/character-cards/valarei.png');
+    --bg-color : #aaa1;
+    --name-margin : 40px 32px;
+    --name-size : 400%;
+    --fam-name-size : 90%;
+    --bg-position : 50% -135%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
+    --title-pos : 70vh;
+    --imagefilter : #5477B800;
+    --color-neon : #5477B8;
+    --image-bg : url('../images/character/lya.png');
+    --banniere-pos : 50%;
+}
 
 
 
