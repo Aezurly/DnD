@@ -615,7 +615,7 @@ ul li ul li {
     --title-pos : 76vh;
     --imagefilter : #bb3e0310;
     --color-neon : #ee9b00;
-    --image-bg : url('../images/character/Pyra.png');
+    --image-bg : url('../images/character/pyra.png');
     --banniere-pos: 50% 30%
 }
 
@@ -629,10 +629,10 @@ ul li ul li {
     --fam-name-size : 110%;
     --bg-position : bottom;
     --bg-gradient : -webkit-linear-gradient(45deg, #6e1423 35%, #a11d33 40%, #da1e37 45%, #6a040f 55%, #370617 80%);
-    --title-pos : 10px;
-    --imagefilter : #5d2e4610;
+    --title-pos : 65vh;
+    --imagefilter : #5d2e4630;
     --color-neon : #e01e37;
-    --banniere-pos : 50% 40%;
+    --banniere-pos : 50% 25%;
 }
 
 .CardsContainer .thyraa {
@@ -753,7 +753,7 @@ ul li ul li {
     border: 2px solid #fff6;
     border-radius: 35px;
     box-shadow: 5px 5px 20px black;
-    margin: 3%;
+    margin: 10% 3%;
     padding: 1%;
     display: flex;
     flex-flow: row wrap;
@@ -765,8 +765,11 @@ ul li ul li {
 .stats-name {
     display: block;
     text-align: center;
-    margin-bottom: 15px;
+    margin: 10px;
+    margin-top:0px;
     width: 95%;
+    font-size: 350%;
+    font-family: 'Monea Alegante';
 }
     
 
@@ -784,18 +787,19 @@ ul li ul li {
 
 
 .fiche .items {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    background: linear-gradient(40deg, #000a, #0003);
+    background: #0000;
     padding: 15px;
-
+    margin: 10px 0px
 }
 
 .items.stats {
     justify-content: space-evenly;
     align-content: space-around;
     display: flex;
+    width:100%;
     flex-flow: wrap row;
-    padding-top: 10px;
+    padding: 0px 20px 25px 20px;
+    border-bottom: 1px dashed #fff5;
 }
 
 .items .stat {
@@ -808,14 +812,36 @@ ul li ul li {
     margin-top: 0
 }
 
-.items.stats h3 {
-    margin: 10px;
+.items h3 {
+    margin: 0px;
+    color:white;
     padding: 0;
     text-align: center;
     float: none;
-    font-size: 200%;
+    font-size: 300%;
+    font-family: 'Monea Alegante';
 }
 
+.st {
+    font-size: 50%;
+    opacity:0.5;
+    margin:3px;
+    padding:0;
+    display:inline;
+}
+
+.hp {
+    text-align:left;
+    width:80px;
+    vertical-align: top;
+    position:absolute;
+    transform: translate(0px, -20px);
+}
+
+.hpmax {
+    text-align:right;
+    float:right;
+}
 
 .banniere {
     width: 100%;
