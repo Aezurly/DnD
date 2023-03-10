@@ -621,7 +621,7 @@ ul li ul li {
 
 .ambrosia {
     --accent-color : #c01 ;
-    --image-bg : url(../images/character/Ambrosia.png) ;
+    --image-bg : url(../images/character/ambrosia.png) ;
     --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 80%, #301  , var(--accent-color ) 100%), url('../images/character-cards/ambrosia.png');
     --bg-color : #1F110E ;
     --name-margin : 35px;
