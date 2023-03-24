@@ -612,11 +612,11 @@ ul li ul li {
     --bg-position : bottom;
     --transY : -20px;
     --bg-gradient : -webkit-linear-gradient(45deg, #e9d8a6 35%, #ee9b00  45%, #bb3e03 50%, #9b2226 60%);
-    --title-pos : 76vh;
+    --title-pos : calc(100vh - 340px);
     --imagefilter : #bb3e0310;
     --color-neon : #ee9b00;
     --image-bg : url('../images/character/pyra.png');
-    --banniere-pos: 50% 30%
+    --banniere-pos: 50% 50%
 }
 
 .ambrosia {
@@ -629,7 +629,7 @@ ul li ul li {
     --fam-name-size : 110%;
     --bg-position : bottom;
     --bg-gradient : -webkit-linear-gradient(45deg, #6e1423 35%, #a11d33 40%, #da1e37 45%, #6a040f 55%, #370617 80%);
-    --title-pos : 65vh;
+    --title-pos : calc(100vh - 320px);
     --imagefilter : #5d2e4630;
     --color-neon : #e01e37;
     --banniere-pos : 50% 25%;
@@ -649,8 +649,8 @@ ul li ul li {
 
 .thyra {
     --bg-gradient : -webkit-linear-gradient(45deg, #fff 35%, #cef 40%, #9ce 45%, #dbd 55%, #ddb 80%);
-    --title-pos : 70vh;
-    --imagefilter : #5bd2;
+    --title-pos : calc(100vh - 340px);
+    --imagefilter : #5bd1;
     --color-neon : #acdbfc;
     --image-bg : url('../images/character/thyra.png')
     }   
@@ -664,11 +664,11 @@ ul li ul li {
     --fam-name-size : 110%;
     --bg-position : 50% 100%;
     --bg-gradient : -webkit-linear-gradient(45deg, #e76f51 25%, #f4a261 40%, #e9c46a 55%, #2a9d8f 65%, #264653 80%);
-    --title-pos : 75vh;
+    --title-pos : calc(100vh - 320px);
     --imagefilter : #f4a2610a;
     --color-neon : #e9c46a;
     --image-bg : url('../images/character/klomilia.png');
-    --banniere-pos : 50% 30%;
+    --banniere-pos : 50% 40%;
 }
 
 .lya {
@@ -681,7 +681,7 @@ ul li ul li {
     --transY : 20px;
     --bg-position : bottom;
     --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
-    --title-pos : 70vh;
+    --title-pos : calc(100vh - 320px);
     --imagefilter : #5477B800;
     --color-neon : #5477B8;
     --image-bg : url('../images/character/lya.png');
@@ -698,7 +698,7 @@ ul li ul li {
     --bg-position : 50% 110%;
     --transY : -3px;
     --bg-gradient : -webkit-linear-gradient(45deg, #f7ede2 25%, #f5cac3 30%, #f28482 45%, #84a59d 55%, #f6bd60 80%);
-    --title-pos : 70vh;
+    --title-pos : calc(100vh - 320px);
     --imagefilter : #f2848210;
     --color-neon : #f28482;
     --image-bg : url('../images/character/misha.png');
@@ -729,6 +729,11 @@ ul li ul li {
 
 
 /* CHARACTERS PAGES : --------------------------------------------------------------------------------------------------*/
+
+.powerpoint iframe {
+    position: absolute;
+    left: calc(50% - 476px)
+}
 
 .gradient-text {
     background-color: white;
