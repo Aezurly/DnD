@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)" href="DNDcss.css">
+    <title>Donjon & Dragon</title>
+    <meta name="author" content="Alice Vergeau">
+    <meta name="keywords" content="dnd, donjon, dragon, thyra">
+    <script src="https://kit.fontawesome.com/e4ce55f7e2.js" crossorigin="anonymous"></script>
+    <style>
+        /*add something from css file*/
+
+    </style>
+</head>
+
+<body>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            var when = document.querySelectorAll(".now");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = when[i].getBoundingClientRect().top;
+                var elementVisible = 1000;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+
+    </script>
+    
+    <div class="menu-bars">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+    
+    <div class="header-container">
+        <header class="header2">
+            <img class="logo" src="logo%20donjon%20et%20dragon%20cropped.png">
+
+            <nav role="navigation" class="sidenav">
+                <ul>
+                    <li><a href="#" aria-haspopup="true">Personnages</a>
+                        <hr>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="#">Thyra</a></li>
+                            <li><a href="#">Ambrosia</a></li>
+                            <li><a href="#">Pyra</a></li>
+                            <li><a href="#">Klomilia</a></li>
+                            <li><a href="#">Misha</a></li>
+                            <li><a href="#">Valarei</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Campagnes</a><hr>
+                        <ul>
+                            <li><a href="#">Marceline</a></li>
+                            <li><a href="#">Curse of Stradh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    
+    
+    
+    <div class="header-container">
+        <header class="reveal">
+            <img class="logo" src="logo%20donjon%20et%20dragon%20cropped.png">
+
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#" aria-haspopup="true">Personnages</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="#">Thyra</a></li>
+                            <li><a href="#">Ambrosia</a></li>
+                            <li><a href="#">Pyra</a></li>
+                            <li><a href="#">Klomilia</a></li>
+                            <li><a href="#">Misha</a></li>
+                            <li><a href="#">Valarei</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Campagnes</a>
+                        <ul>
+                            <li><a href="#">Marceline</a></li>
+                            <li><a href="#">Curse of Stradh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+    </div>
+    
+    
+    <section class="background">
+        <div class="welcome"></div>
+    </section>
+    <nav role="navigation">
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#" aria-haspopup="true">Personnages</a>
+                        <ul class="dropdown" aria-label="submenu">
+                            <li><a href="#">Thyra</a></li>
+                            <li><a href="#">Ambrosia</a></li>
+                            <li><a href="#">Pyra</a></li>
+                            <li><a href="#">Klomilia</a></li>
+                            <li><a href="#">Misha</a></li>
+                            <li><a href="#">Valarei</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Campagnes</a>
+                        <ul>
+                            <li><a href="#">Marceline</a></li>
+                            <li><a href="#">Curse of Stradh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    <main class="now">
+        <h1>Characters</h1>
+        <section class="CardsHolder">
+            <div class="container1">
+                <a href="Thyra.html">
+                    <div class="items" style="background: linear-gradient(130deg, #4488aadd 20%, #ffffffaa),
+    url('../Thyra/ThyraCard.png') 245% ">
+
+                        <h2>Thyra <span class="sous"> af himlen Ulfbjørn </span></h2>
+                        <h3>Marceline</h3>
+                        <p class="race">Air Genasi - Sorcerer 1</p>
+
+                        <div class="boiteGauche">
+                            <p class="citation"> &laquo; Alice voulait faire un perso ough ough donc elle a choisit une sauvage. Ceci est une fausse quote parce que la campagne n'a pas encore commencé. &raquo; </p>
+                            <p class="auteur">Moi-même</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="items" style="background-image: linear-gradient(130deg, #000000dd 20%, #aa0000aa), url('../dnd/Ambrosia/ambrosiaCard.png')">
+
+                    <h2>Ambrosia <span class="sous">Ticălită </span></h2>
+                    <h3>Curse of Stradh</h3>
+                    <p class="race">Dhampir - Rogue 9</p>
+
+                    <div class="boiteGauche">
+                        <p class="citation"> &laquo; Daddy issues, secrets et se prendre half-damage pour aucune raison, ne cherchez pas plus loin, c'est Ambrosia. &raquo; </p>
+                        <p class="auteur">Célestin</p>
+                    </div>
+
+                </div>
+
+                <div class="items" style="background-image: linear-gradient(70deg, #aa1100dd, #ee882265, #0000), url('../Pyra/pyraCard.png')">
+
+                    <h2>Pyra <span class="sous">Del'ignis</span></h2>
+                    <h3>Phandelvre</h3>
+
+                    <p class="race">Fire Genasi - Wizard 10</p>
+
+                    <div class="boiteGauche">
+                        <p class="citation"> &laquo; En bref, Pyra c'est : un savoir hors du commun, des capacités sociales pire qu'inexistantes, et l'amour de l’odeur du sang et des cendres. &raquo; </p>
+                        <p class="auteur">Max</p>
+                    </div>
+
+                </div>
+
+                <div class="items" style="background-image: linear-gradient(100deg, #421e 10%, #c49f3760), url('../Klomilia/klomiliaCarddd.png')">
+
+                    <h2>Klomilia <span class="sous">Bronzegrace</span></h2>
+                    <h3>Sang et Flammes</h3>
+
+                    <p class="race">Gnome - Artificer 4</p>
+
+                    <div class="boiteGauche">
+                        <p class="citation"> &laquo; - Alors, ça fait quoi de se transformer en monstre et de tuer plein de gens? <br> - Oh bah on s'y fait. &raquo; </p>
+                        <p class="auteur">L'allumette</p>
+                    </div>
+
+                </div>
+
+                <div class="items" style="background-image: linear-gradient(100deg, #eaa, #a9595c55 45%, #57443e00 90%), url('../dnd/Misha/mishaCard.png')">
+
+                    <h2>Misha <span class="sous">le singe</span></h2>
+                    <h3>Kampagn Pirates</h3>
+
+                    <p class="race">Monkey Apeling - Gunslinger 2</p>
+
+                    <div class="boiteGauche">
+                        <p class="citation"> &laquo; OUGH OUGH. HINHINHINHINHINHINHINHIN HOUN. OUGH OUGHY HOUHOUHOU &raquo; </p>
+                        <p class="auteur">Mère de Misha</p>
+                    </div>
+
+                </div>
+
+                <div class="items" style="background-image: linear-gradient(40deg, #AA6DABaa, #11051137 90%, #AA6DAB00), url('../Valarei/valareiCardd.png')">
+
+                    <h2>Valarei <span class="sous">Quorion</span></h2>
+                    <h3></h3>
+
+                    <p class="race">Eladrin - Rogue 7</p>
+
+                    <div class="boiteGauche">
+                        <p class="citation"> &laquo; Une emo psychopathe avec des grand-maman issues: Quoi de mieux pour décrire la meilleur de toutes les amies? &raquo; </p>
+                        <p class="auteur">Pinpin le Lapin</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <!-- https://ddb.ac/characters/81502983/ITX0q9 -->
+    <!--    style="background: linear-gradient(to right, rgba(255,255,255,0.6), #5599bb), url('../Thyra/thyra.png') ; " -->
+</body>

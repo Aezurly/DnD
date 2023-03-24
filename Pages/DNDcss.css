@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Merienda:wght@500&family=Noto+Sans:wght@500&family=PT+Serif&family=Noto+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'South Signature';
+    src: url('FONTS/webfontkit south signature/south_signature-webfont.woff2') format('woff2'),
+        url('FONTS/webfontkit south signature/south_signature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monea Alegante';
+    src: url('FONTS/webfontkit monea/monea_alegante-webfont.woff2') format('woff2'),
+        url('FONTS/webfontkit monea/monea_alegante-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'south_signatureregular';
+    src: url('south_signature-webfont.woff2') format('woff2'),
+         url('south_signature-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+    height:3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #c33a;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fffc;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    background-color: #101010;
+    font-size: 95%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /*    text-align : center;*/
+}
+
+header {
+    background-color: #000;
+    height: 60px;
+    padding: 15px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 3;
+}
+
+.header2 {
+    height: 98%;
+    width: 180px;
+    left: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200px);
+    z-index: 3;
+}
+
+.header2 nav ul li ul {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    display: block;
+}
+
+.menu-bars {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    font-size: 50px;
+    color: white;
+    z-index:2;
+}
+
+.closebtn {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 0px 0px 10px;
+}
+
+
+.menu-bars button {
+    background-color: #0000;
+    color: #fffc;
+    font-size: 50px;
+    text-shadow: 0 0 25px black;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu-bars button:hover {
+    color: #c33;
+    transition: all 0.5s ease;
+}
+
+.sidenav {
+    margin-left: 10px;
+}
+
+.sidenav li ul li:hover {
+    background-color: #c33;
+}
+
+.header2 .logo {
+    margin: 0px 3px 5px;
+
+}
+
+
+main {
+    padding-top: 80px;
+    /*    background-image: radial-gradient(#000000aa, #00000000 70%), repeating-radial-gradient(#ffffff00, #ffffff00 5%, #0004 24%, #ffffff00 24%);*/
+    height: 1160px
+}
+
+
+
+a {
+    text-decoration: none
+}
+
+
+p {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin: 0;
+    font-size: 110%
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Noto Sans', cursive;
+    margin-bottom: 5px;
+    font-size: 200%;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Monea Alegante';
+    font-size: 800%;
+    text-align: center;
+    margin: 15px 0 50px 0;
+    padding: 0;
+    font-variant: small-caps;
+    line-height: 60%;
+}
+
+
+header h2 {
+    margin: 15px;
+    margin-top: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 900;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.background {
+    background-color: #101010;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bg-items:last-child {
+    display: flex;
+    align-self: flex-end;
+}
+
+.welcome {
+    display: block;
+    position: absolute;
+    top: calc(50vh - 160px);
+    background-image: url(../images/logo-dnd-cropped.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (min-width: 1800px) {
+    .welcome {
+        height: 500px;
+        top: calc(50vh - 270px);
+    }
+}
+
+.icon {
+    color: white;
+    text-align: center;
+    font-size: 600%;
+    display: block;
+    margin: 0;
+}
+
+hr {
+    margin: 8px 15px 0px;
+    border: 0px;
+    height: 2px;
+    background-color: #c338;
+    border-radius: 20px;
+    display: block;
+}
+
+.droite {
+    float: right;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.sous {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 70%;
+    display: block;
+}
+
+
+.black {
+    color: black;
+}
+
+/* Arrow animation */
+
+#arrowAnim {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: appear 10s linear;
+    transition: all 2s ease;
+}
+
+.arrow {
+    color:#fffb;
+    font-size: 50px
+}
+
+
+.arrowSliding {
+    position: absolute;
+    animation: slide 9s linear infinite;
+}
+
+.delay1 {
+    animation-delay: 3s;
+}
+
+.delay2 {
+    animation-delay: 6s;
+}
+
+.disappear {
+    animation: fadeOut 2s linear;
+}
+
+.appear {
+    animation: appear 5s linear;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity :1;
+    }
+    70% {
+        opacity :0.9;
+    }
+    100% {
+        opacity : 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity :0;
+    }
+    70% {
+        opacity :0.1;
+    }
+    100% {
+        opacity : 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+}
+
+
+/*  NAVIGUATION MENU : ======================================================================================= */
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    background: #0000;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 160%;
+    font-family: 'Noto Sans', cursive
+}
+
+nav {
+    float: right;
+    display: inline;
+    margin-top: 5px;
+    z-index: 3;
+}
+
+nav li {
+    color: #fff;
+    background: #0000;
+    display: block;
+    float: left;
+    font-size: 90%;
+    padding: 0.7rem;
+    margin: 0.1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+
+}
+
+nav li a {
+    color: #fff;
+}
+
+.horinav li:hover {
+    background-color: #c33;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+ul li ul li:hover {
+    background: #c33;
+    color: white;
+    cursor: pointer;
+}
+
+/*#DB2B39*/
+
+li:focus-within a {
+    outline: none;
+}
+
+nav ul li ul {
+    background: #111;
+    border-radius: 0 0px 15px 15px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 0.6rem;
+    left: 0;
+    display: none;
+    font-size: 80%
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: all 1s ease;
+}
+
+ul li ul li {
+    clear: both;
+    width: 90%;
+    padding: 0.5em;
+}
+
+
+/* CHARACTERS CARDS : ------------------------------------------------------------------------------------------------ */
+
+.CardsContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.cards {
+    --bg-color : #aaa1;
+    width: 300px;
+    height:400px;
+    background-color: var(--bg-color);
+    border-radius:50px;
+    margin:25px;
+    border: 1px #fff5 solid;
+    overflow:hidden;
+    box-shadow: 5px 5px 20px black; 
+    transition: transform 0.5s;
+    z-index: 1;
+}
+
+.hiddenCards {
+    visibility: hidden;
+    position:absolute;
+}
+
+.VoirPlus {
+    margin: 0px 45vw;
+    background: #0000;
+    color:white;
+    font-family: 'Noto Sans';
+    font-weight: 100;
+    font-size: 120%;
+    text-align: center;
+    border: 1px solid #fffa;
+    border-radius: 25px;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.VoirPlus:hover {
+    transform: scale(110%);
+    background: #c33;
+    transition: all 0.5s ease;
+}
+
+.hidCit {
+    font-family: 'Noto Sans';
+    margin: 35px 0px;
+    padding: 20px 20px;
+    font-size: 120%;
+    line-height: 20px;
+    background-color: #000b;
+    box-shadow: 0 0 30px black;
+    opacity:0;
+    transition: all 1s ease;
+    border : 1px solid var(--accent-color);
+    border-left : 0px;
+    border-right: 0px;
+}
+
+.hidCit p {
+    text-align: center;
+    color: #fffd;
+    font-weight: 300;
+    font-size: 90%;
+}
+
+.hidCit h5 {
+    font-family: 'South Signature';
+    color : #fff;
+    font-size: 170%;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.cards:hover .hidCit {
+    opacity :1;
+    transition: all 1s ease;
+}
+
+.cards:hover {
+    position: relative;
+    transform: scale(110%);
+    transition: transform 0.5s;
+    animation: cardHover 1s ease ;
+    animation-fill-mode: forwards
+}
+
+.cards h2 {
+    font-family: 'Monea Alegante';
+    text-align: left;
+    font-variant: normal;
+    text-transform: none;
+    font-size: var(--name-size);
+    margin: 0px var(--name-margin) ;
+    line-height: 40px;
+    text-shadow: 0px 0px 15px #000c;
+}
+
+.cards .familyName {
+    font-size: var(--fam-name-size);
+    display:block;
+    text-align:right;
+    margin:0px;
+    font-family: 'South Signature';
+}
+
+.cards h4 {
+    font-family:  'Noto Sans', sans-serif;
+    line-height: 10px;
+    font-stretch: condensed;
+    color: #fffc;
+    font-weight: 300;
+    margin:0;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.cards h3 {
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 110%;
+    font-weight: 300;
+    margin: 49px 0px;
+    padding:5px;
+    width:300px;
+    transform: translateY(var(--transY));
+    color: #fff;
+    box-shadow: 0px 2px 20px #000a;
+    background-color: #0006;
+}
+
+
+@keyframes cardover {
+    0% {
+        filter:blur(1px);
+    }
+    100% {
+        filter:blur(5px);
+        opacity :0.6;
+    }
+}
+
+
+.portrait {
+    width:300px;
+    height:100%;
+    background-image: var(--portrait-image);
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: var(--bg-position);
+    position:static;
+}
+
+.pyra {
+    --accent-color : #e62a ;
+    --portrait-image : url('../images/character-cards/pyra.png');
+    --bg-color : #aaa1;
+    --name-margin : 60px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --bg-position : bottom;
+    --transY : -20px;
+    --bg-gradient : -webkit-linear-gradient(45deg, #e9d8a6 35%, #ee9b00  45%, #bb3e03 50%, #9b2226 60%);
+    --title-pos : 76vh;
+    --imagefilter : #bb3e0310;
+    --color-neon : #ee9b00;
+    --image-bg : url('../images/character/pyra.png');
+    --banniere-pos: 50% 30%
+}
+
+.ambrosia {
+    --accent-color : #c01 ;
+    --image-bg : url(../images/character/ambrosia.png) ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 80%, #301  , var(--accent-color ) 100%), url('../images/character-cards/ambrosia.png');
+    --bg-color : #1F110E ;
+    --name-margin : 35px;
+    --name-size : 330%;
+    --fam-name-size : 110%;
+    --bg-position : bottom;
+    --bg-gradient : -webkit-linear-gradient(45deg, #6e1423 35%, #a11d33 40%, #da1e37 45%, #6a040f 55%, #370617 80%);
+    --title-pos : 65vh;
+    --imagefilter : #5d2e4630;
+    --color-neon : #e01e37;
+    --banniere-pos : 50% 25%;
+}
+
+.CardsContainer .thyraa {
+    --accent-color : #bac ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 50%, #acda 75%,  var(--accent-color ) 95%), url('../images/character-cards/thyra.png');
+    --bg-color : #aaa1;
+    --name-margin : 18px;
+    --name-size : 400%;
+    --fam-name-size : 70%;
+    --bg-position : 50% 480%;
+    --bg-gradient : #c33;
+    
+}
+
+.thyra {
+    --bg-gradient : -webkit-linear-gradient(45deg, #fff 35%, #cef 40%, #9ce 45%, #dbd 55%, #ddb 80%);
+    --title-pos : 70vh;
+    --imagefilter : #5bd2;
+    --color-neon : #acdbfc;
+    --image-bg : url('../images/character/thyra.png')
+    }   
+
+.klomilia {
+    --accent-color : #153d35 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 82%, var(--accent-color ) 88%, #fb5607 98%, #331d13 110%), url('../images/character-cards/klomilia.png');
+    --bg-color : #1F110E ;
+    --name-margin : 35px;
+    --name-size : 330%;
+    --fam-name-size : 110%;
+    --bg-position : 50% 100%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #e76f51 25%, #f4a261 40%, #e9c46a 55%, #2a9d8f 65%, #264653 80%);
+    --title-pos : 75vh;
+    --imagefilter : #f4a2610a;
+    --color-neon : #e9c46a;
+    --image-bg : url('../images/character/klomilia.png');
+    --banniere-pos : 50% 30%;
+}
+
+.lya {
+    --accent-color : #ccc ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 50%, #5C77AC 65%,  var(--accent-color ) 95%), url('../images/character-cards/lya.png');
+    --bg-color : #aaa1;
+    --name-margin : 100px 0px 32px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --transY : 20px;
+    --bg-position : bottom;
+    --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
+    --title-pos : 70vh;
+    --imagefilter : #5477B800;
+    --color-neon : #5477B8;
+    --image-bg : url('../images/character/lya.png');
+    --banniere-pos : 50%;
+}
+
+.misha {
+    --accent-color : #eaa ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 60%, #523 75%,  var(--accent-color ) 100%), url('../images/character/misha.png');
+    --bg-color : #aaa1;
+    --name-margin : 45px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --bg-position : 50% 110%;
+    --transY : -3px;
+    --bg-gradient : -webkit-linear-gradient(45deg, #f7ede2 25%, #f5cac3 30%, #f28482 45%, #84a59d 55%, #f6bd60 80%);
+    --title-pos : 70vh;
+    --imagefilter : #f2848210;
+    --color-neon : #f28482;
+    --image-bg : url('../images/character/misha.png');
+    --banniere-pos : 50% 0%;
+}
+
+.valarei {
+    --accent-color : #231942 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 55%, #000, #6d6875 80%,  var(--accent-color ) 95%), url('../images/character-cards/valarei.png');
+    --bg-color : #aaa1;
+    --name-margin : 40px 32px;
+    --name-size : 400%;
+    --fam-name-size : 90%;
+    --bg-position : 50% -135%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
+    --title-pos : 70vh;
+    --imagefilter : #5477B800;
+    --color-neon : #5477B8;
+    --image-bg : url('../images/character/lya.png');
+    --banniere-pos : 50%;
+}
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
+
+/* CHARACTERS PAGES : --------------------------------------------------------------------------------------------------*/
+
+.gradient-text {
+    background-color: white;
+    -webkit-text-fill-color: transparent;
+    font-size: 1500%;
+    background: var(--bg-gradient);
+    -webkit-background-clip: text;
+    z-index:1;
+}
+
+.banniere h1 {
+    font-variant:normal;
+    position: absolute;
+    width: 100vw;
+    top: var(--title-pos);
+    padding:0.3em 0;
+}
+
+
+
+.fiche {
+    border: 2px solid #fff6;
+    border-radius: 35px;
+    box-shadow: 5px 5px 20px black;
+    margin: 10% 3%;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    -webkit-background-clip: none;
+}
+
+.stats-name {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top:0px;
+    width: 95%;
+    font-size: 350%;
+    font-family: 'Monea Alegante';
+}
+    
+
+
+.famille {
+    filter: drop-shadow(0 0 0.7rem var(--color-neon));
+    color: #fff;
+    transform: translateY(1.4em);
+    font-family: "South Signature";
+    font-weight: 100;
+    z-index:2;
+    font-size:800%;
+    text-shadow: 0px 0px 0px #000;
+}
+
+
+.fiche .items {
+    background: #0000;
+    padding: 15px;
+    margin: 10px 0px
+}
+
+.items.stats {
+    justify-content: space-evenly;
+    align-content: space-around;
+    display: flex;
+    width:100%;
+    flex-flow: wrap row;
+    padding: 0px 20px 25px 20px;
+    border-bottom: 1px dashed #fff5;
+}
+
+.items .stat {
+    height: 80px;
+    width: 70px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-top: 0
+}
+
+.items h3 {
+    margin: 0px;
+    color:white;
+    padding: 0;
+    text-align: center;
+    float: none;
+    font-size: 300%;
+    font-family: 'Monea Alegante';
+}
+
+.st {
+    font-size: 50%;
+    opacity:0.5;
+    margin:3px;
+    padding:0;
+    display:inline;
+}
+
+.hp {
+    text-align:left;
+    width:80px;
+    vertical-align: top;
+    position:absolute;
+    transform: translate(0px, -20px);
+}
+
+.hpmax {
+    text-align:right;
+    float:right;
+}
+
+.banniere {
+    width: 100%;
+    height: 105vh;
+    background-attachment: fixed;
+    background-position: var(--banniere-pos);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 5px 5px 60px black;
+    background-image: linear-gradient(0deg, #000a 5%, var(--imagefilter)), var(--image-bg);
+    z-index:0;
+}

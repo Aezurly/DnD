@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)"
+      href="DNDcss.css">
+    <script src="https://kit.fontawesome.com/e4ce55f7e2.js" crossorigin="anonymous"></script>
+    <title>Thyra Ulfbjørn</title>
+    <meta name="author" content="Alice Vergeau">
+    <meta name="keywords" content="dnd, donjon, dragon, thyra">
+    <style>
+        /*add something from css file*/
+
+    </style>
+  </head>
+  <body>
+      <script>
+
+        function fade() {
+            
+            
+            if (window.scrollY > 1) {
+                document.getElementById("arrowAnim").style.visibility = "hidden";
+                document.getElementById("arrowAnim").style.opacity = "0";
+            } else {
+                document.getElementById("arrowAnim").style.visibility = "visible";
+                document.getElementById("arrowAnim").style.opacity = "1";
+            }
+        }
+
+
+        window.addEventListener("scroll", fade);
+
+        function openNav() {
+            document.getElementById("sidebar").style.opacity = "1";
+            document.getElementById("sidebar").style.visibility = "visible";
+            
+            document.getElementById("sidebar").style.transform = "translateX(0px)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.opacity = "0";
+            document.getElementById("sidebar").style.visibility = "hidden";
+            document.getElementById("sidebar").style.transform = "translateX(-200px)";
+
+        }
+
+    </script>
+    
+      
+    <div class="menu-bars">
+        <button class="bars" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="header-container">
+        <header class="header2" id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <img class="logo" src="../images/logo-dnd-cropped.png">
+
+
+
+            <nav role="navigation" class="sidenav">
+                <ul>
+                    <li><a href="#" aria-haspopup="true">Personnages</a>
+                        <hr>
+                        <ul class="dropdown" aria-label="submenu">
+                        <li><a href="Thyra.html">Thyra</a></li>
+                        <li><a href="Ambrosia.html">Ambrosia</a></li>
+                        <li><a href="Pyra.html">Pyra</a></li>
+                        <li><a href="Klomilia.html">Klomilia</a></li>
+                        <li><a href="Misha.html">Misha</a></li>
+                        <li><a href="Lya.html">Liannerya</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Campagnes</a>
+                        <hr>
+                        <ul>
+                            <li><a href="#">Marceline</a></li>
+                            <li><a href="#">Curse of Stradh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+    </div>
+      
+      
+      
+    <section class="banniere thyra" style="background:url('../../images/THYRA with wolf.png'); background-position: 0 10%; background-size: cover; ">
+      <div class="banniere" style="">
+        <h1 class="gradient-text thyra">Thyra
+          </h1> 
+          <h1 class="famille thyra"> Ulfbjørn </h1>
+        </div>
+    </section>
+      
+    <main>
+        <div class="thyra fiche">
+            <div class="items stats">
+                <h2 class="stats-name"> STATS </h2>
+                <div class="items stat"> <p>STR</p> <h3>-1</h3> <p>8</p> </div>
+                <div class="items stat"> <p>DEX</p> <h3>+2</h3> <p>14</p> </div>
+                <div class="items stat"> <p>CON</p> <h3>+3</h3> <p>16</p> </div>
+                <div class="items stat"> <p>INT</p> <h3>-1</h3> <p>8</p> </div>
+                <div class="items stat"> <p>WIS</p> <h3>+0</h3> <p>10</p> </div>
+                <div class="items stat"> <p>CHA</p> <h3>+3</h3> <p>17</p> </div>
+            </div>
+            
+            <div class="items">
+                <p> PROFICIENCY </p> <h3>+2</h3> <p>BONUS</p>
+            </div>
+            <div class="items">
+                <p> HIT POINTS </p> <h3>9 / 9</h3> <br> <p class="st hp">CURRENT <span class="hpmax">MAX</span></p>
+            </div>
+            <div class="items">
+                <p> WALKING </p> <h3>35<span class="st">ft.</span></h3> <p>SPEED</p>
+            </div>
+            <div class="items">
+                <p> INITIATIVE </p> <h3>+2</h3>
+            </div>
+            <div class="items">
+                <p> ARMOR </p> <h3>12</h3> <p>CLASS</p>
+            </div>
+            <div class="items">
+                <p> DEFENSE </p> <h3>12</h3> <p>CLASS</p>
+            </div>
+            
+        </div>
+      
+    </main>
+      
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)" href="DNDcss.css">
+    <title>Thyra</title>
+    <meta name="author" content="Alice Vergeau">
+    <meta name="keywords" content="dnd, donjon, dragon, thyra">
+    <style>
+        /*add something from css file*/
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Donjon et Dragon <span class="droite"> Alice</span></h2>
+    </header>
+    <section class="banniere" style="background:url('../Thyra/Thyra.png'); background-position: 0% 15%; background-size: cover; ">
+        <div class="banniere" style="background-image:linear-gradient(0deg, #000, #48a8 70%, #0000 150%)">
+            <h1 class="gradient-text" ; style="background: -webkit-linear-gradient(45deg, #7ab 30%, #144063 60%)">Thyra </h1>
+        </div>
+    </section>
+    
+</body>
