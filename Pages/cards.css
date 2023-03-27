@@ -788,8 +788,8 @@ td {
     border: 2px solid #fff6;
     border-radius: 35px;
     box-shadow: 5px 5px 20px black;
-    margin: 3%;
-    padding: 1%;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
