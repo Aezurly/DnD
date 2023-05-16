@@ -387,7 +387,8 @@ nav li {
 }
 
 .horinav li ul {
-    box-shadow: 1px 3px 0px 2px #c337;
+    border-bottom: 1px solid #c33;
+    border-right: 1px dashed #c33;
 }
 
 nav li a {
@@ -641,7 +642,7 @@ ul li ul li {
 
 .CardsContainer .thyraa {
     --accent-color : #bac ;
-    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 50%, #acda 75%,  var(--accent-color ) 95%), url('../images/character-cards/thyra.png');
+    --portrait-image : radial-gradient(circle 600px at 50% 130%, #0000 60%, rgb(132, 193, 223) 72%,  var(--accent-color ) 85%), url('../images/character-cards/thyra.png');
     --bg-color : #aaa1;
     --name-margin : 18px;
     --name-size : 400%;
