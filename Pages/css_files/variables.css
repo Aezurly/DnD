@@ -1,0 +1,121 @@
+/* VARIABLES ================================================================*/
+
+.pyra {
+    --accent-color : #e62a ;
+    --portrait-image : url('../../images/character-cards/pyra.png');
+    --bg-color : #aaa1;
+    --name-margin : 60px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --bg-position : bottom;
+    --transY : -20px;
+    --bg-gradient : -webkit-linear-gradient(45deg, crimson 35%, #ee9b00  45%, #bb3e03 50%, #9b2226 60%);
+    --title-pos : calc(100vh - 340px);
+    --imagefilter : #bb3e0310;
+    --color-neon : #ee9b00;
+    --image-bg : url('../../images/character/pyrav2.png');
+    --banniere-pos: 50% 50%
+}
+
+.ambrosia {
+    --accent-color : #c01 ;
+    --image-bg : url(../../images/character/ambrosia.png) ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 80%, #301  , var(--accent-color ) 100%), url('../../images/character-cards/ambrosia.png');
+    --bg-color : #1F110E ;
+    --name-margin : 35px;
+    --name-size : 330%;
+    --fam-name-size : 110%;
+    --bg-position : bottom;
+    --bg-gradient : -webkit-linear-gradient(45deg, #6e1423 35%, #a11d33 40%, #da1e37 45%, #6a040f 55%, #370617 80%);
+    --title-pos : calc(100vh - 320px);
+    --imagefilter : #5d2e4630;
+    --color-neon : #e01e37;
+    --banniere-pos : 50% 25%;
+}
+
+.CardsContainer .thyraa {
+    --accent-color : #bac ;
+    --portrait-image : radial-gradient(circle 600px at 50% 130%, #0000 60%, rgb(132, 193, 223) 72%,  var(--accent-color ) 85%), url('../../images/character-cards/thyra.png');
+    --bg-color : #aaa1;
+    --name-margin : 18px;
+    --name-size : 400%;
+    --fam-name-size : 70%;
+    --bg-position : 50% 480%;
+    --bg-gradient : #c33;
+    
+}
+
+.thyra {
+    --bg-gradient : -webkit-linear-gradient(45deg, #fff 35%, #cef 40%, #9ce 45%, #dbd 55%, #ddb 80%);
+    --title-pos : calc(100vh - 340px);
+    --imagefilter : #5bd1;
+    --color-neon : #acdbfc;
+    --image-bg : url('../../images/character/thyra.png')
+    }   
+
+.klomilia {
+    --accent-color : #153d35 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 82%, var(--accent-color ) 88%, #fb5607 98%, #331d13 110%), url('../../images/character-cards/klomilia.png');
+    --bg-color : #1F110E ;
+    --name-margin : 35px;
+    --name-size : 330%;
+    --fam-name-size : 110%;
+    --bg-position : 50% 100%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #e76f51 25%, #f4a261 40%, #e9c46a 55%, #2a9d8f 65%, #264653 80%);
+    --title-pos : calc(100vh - 320px);
+    --imagefilter : #f4a2610a;
+    --color-neon : #e9c46a;
+    --image-bg : url('../../images/character/klomilia.png');
+    --banniere-pos : 50% 40%;
+}
+
+.lya {
+    --accent-color : #ccc ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 50%, #5C77AC 65%,  var(--accent-color ) 95%), url('../../images/character-cards/lya.png');
+    --bg-color : #aaa1;
+    --name-margin : 100px 0px 32px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --transY : 20px;
+    --bg-position : bottom;
+    --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
+    --title-pos : calc(100vh - 320px);
+    --imagefilter : #5477B800;
+    --color-neon : #5477B8;
+    --image-bg : url('../../images/character/lya.png');
+    --banniere-pos : 50%;
+}
+
+.misha {
+    --accent-color : #eaa ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 60%, #523 75%,  var(--accent-color ) 100%), url('../../images/character/misha.png');
+    --bg-color : #aaa1;
+    --name-margin : 45px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --bg-position : 50% 110%;
+    --transY : -3px;
+    --bg-gradient : -webkit-linear-gradient(45deg, #f7ede2 25%, #f5cac3 30%, #f28482 45%, #84a59d 55%, #f6bd60 80%);
+    --title-pos : calc(100vh - 320px);
+    --imagefilter : #f2848210;
+    --color-neon : #f28482;
+    --image-bg : url('../../images/character/misha.png');
+    --banniere-pos : 50% 0%;
+}
+
+.valarei {
+    --accent-color : #231942 ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 55%, #000, #6d6875 80%,  var(--accent-color ) 95%), url('../../images/character-cards/valarei.png');
+    --bg-color : #aaa1;
+    --name-margin : 40px 32px;
+    --name-size : 400%;
+    --fam-name-size : 90%;
+    --bg-position : 50% -135%;
+    --bg-gradient : -webkit-linear-gradient(45deg, #FFFFFF 25%, #edf2fb 30%, #A3A4A6 45%, #5477B8 55%, #2B489D 80%);
+    --title-pos : 70vh;
+    --imagefilter : #5477B800;
+    --color-neon : #5477B8;
+    --image-bg : url('../../images/character/lya.png');
+    --banniere-pos : 50%;
+}
+

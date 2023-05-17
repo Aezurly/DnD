@@ -1,0 +1,173 @@
+header {
+    background-color: #000;
+    height: 60px;
+    padding: 15px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 3;
+}
+
+.header2 {
+    height: 98%;
+    width: 180px;
+    left: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200px);
+    z-index: 3;
+}
+
+.header2 nav ul li ul {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    display: block;
+}
+
+.menu-bars {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    font-size: 50px;
+    color: white;
+    z-index:2;
+}
+
+.closebtn {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 0px 0px 10px;
+}
+
+
+.menu-bars button {
+    background-color: #0000;
+    color: #fffc;
+    font-size: 50px;
+    text-shadow: 0 0 25px black;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu-bars button:hover {
+    color: #c33;
+    transition: all 0.5s ease;
+}
+
+.sidenav {
+    margin-left: 10px;
+}
+
+.sidenav li ul li:hover {
+    background-color: #c33;
+}
+
+.header2 .logo {
+    margin: 0px 3px 5px;
+
+}
+
+
+
+/*  NAVIGUATION MENU : ======================================================================================= */
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    background: #0000;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 160%;
+    font-family: 'Noto Sans', cursive
+}
+
+nav {
+    float: right;
+    display: inline;
+    margin-top: 5px;
+    z-index: 3;
+}
+
+nav li {
+    color: #fff;
+    background: #0000;
+    display: block;
+    float: left;
+    font-size: 90%;
+    padding: 0.7rem;
+    margin: 0.1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+
+}
+
+.horinav li ul {
+    border-bottom: 1px solid #c33;
+    border-right: 1px dashed #c33;
+}
+
+nav li a {
+    color: #fff;
+}
+
+.horinav li:hover {
+    background-color: #c33;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+ul li ul li:hover {
+    background: #c33;
+    color: white;
+    cursor: pointer;
+}
+
+/*#DB2B39*/
+
+li:focus-within a {
+    outline: none;
+}
+
+nav ul li ul {
+    background: #111;
+    border-radius: 0 0px 15px 15px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 0.6rem;
+    left: 0;
+    display: none;
+    font-size: 80%
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    transition: all 1s ease;
+}
+
+ul li ul li {
+    clear: both;
+    width: 90%;
+    padding: 0.5em;
+}
+

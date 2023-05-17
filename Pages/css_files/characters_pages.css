@@ -1,0 +1,145 @@
+
+/* CHARACTERS PAGES : --------------------------------------------------------------------------------------------------*/
+
+.powerpoint iframe {
+    position: absolute;
+    left: calc(50% - 476px)
+}
+
+.gradient-text {
+    background-color: white;
+    -webkit-text-fill-color: transparent;
+    font-size: 1500%;
+    background: var(--bg-gradient);
+    background-clip: text ;
+    -webkit-background-clip: text;
+    z-index:1;
+}
+
+.banniere h1 {
+    font-variant:normal;
+    position: absolute;
+    width: 100vw;
+    top: var(--title-pos);
+    padding:0.3em 0;
+}
+
+
+
+.fiche {
+    border: 2px solid #fff6;
+    border-radius: 35px;
+    box-shadow: 5px 5px 20px black;
+    margin: 10% 3%;
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    -webkit-background-clip: none;
+    background-clip: none ;
+}
+
+.stats-name {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top:0px;
+    width: 95%;
+    font-size: 350%;
+    font-family: 'Monea Alegante';
+}
+    
+
+
+.famille {
+    filter: drop-shadow(0 0 0.7rem var(--color-neon));
+    color: #fff;
+    transform: translateY(1.4em);
+    font-family: "South Signature";
+    font-weight: 100;
+    z-index:2;
+    font-size:800%;
+    text-shadow: 0px 0px 0px #000;
+}
+
+
+.fiche .items {
+    background: #0000;
+    padding: 15px;
+    margin: 10px 0px
+}
+
+.items.stats {
+    justify-content: space-evenly;
+    align-content: space-around;
+    display: flex;
+    width:100%;
+    flex-flow: wrap row;
+    padding: 0px 20px 25px 20px;
+    border-bottom: 1px dashed #fff5;
+}
+
+.items .stat {
+    height: 80px;
+    width: 70px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-top: 0
+}
+
+.items h3 {
+    margin: 0px;
+    color:white;
+    padding: 0;
+    text-align: center;
+    float: none;
+    font-size: 300%;
+    font-family: 'Monea Alegante';
+}
+
+.st {
+    font-size: 50%;
+    opacity:0.5;
+    margin:3px;
+    padding:0;
+    display:inline;
+}
+
+.hp {
+    text-align:left;
+    width:80px;
+    vertical-align: top;
+    position:absolute;
+    transform: translate(0px, -20px);
+}
+
+.hpmax {
+    text-align:right;
+    float:right;
+}
+
+.banniere {
+    width: 100%;
+    height: 105vh;
+    background-attachment: fixed;
+    background-position: var(--banniere-pos);
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 5px 5px 60px black;
+    background-image: linear-gradient(0deg, #000a 5%, var(--imagefilter)), var(--image-bg);
+    z-index:0;
+}
+
+.mainp {
+    height:1000px;
+}
+
+.evolution {
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle at 50% 90%, #ff0 0%,#9b2226 10%, #9b222680, #0000 60%);
+    filter: blur(100px);
+}

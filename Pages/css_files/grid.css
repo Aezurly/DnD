@@ -1,0 +1,12 @@
+.grid-container {
+    width:80%;
+    margin:30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px; /* Adjust this value to set the gap between the boxes */
+  }
+
+.grid-item {
+    background-color:crimson;
+    height:100px;
+}
