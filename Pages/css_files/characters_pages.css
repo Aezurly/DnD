@@ -129,17 +129,154 @@
     background-repeat: no-repeat;
     background-size:cover;
     box-shadow: 5px 5px 60px black;
-    background-image: linear-gradient(0deg, #000a 5%, var(--imagefilter)), var(--image-bg);
+    background-image: linear-gradient(0deg, #0008 5%, var(--imagefilter)), var(--image-bg);
     z-index:0;
 }
 
 .mainp {
-    height:1000px;
+    /* height:1000px; */
 }
 
 .evolution {
+    position: absolute;
+    top: 90vh;
     width:100%;
-    height:100%;
-    background: radial-gradient(circle at 50% 90%, #ff0 0%,#9b2226 10%, #9b222680, #0000 60%);
-    filter: blur(100px);
+    height: calc(5800px - 100vw); 
+    background: radial-gradient(circle at 50% 90%, #ff0 0%, #e14a03 20%, #9b2226 40%, #0000 80%);
+    filter: blur(130px);
+    opacity: 0.7;
 }
+/* 
+100% = 1275
+400% = 5100
+100vw = 1036
+
+imported from codepen https://codepen.io/Divyesh-K/pen/YzxLQNz */
+
+.design-section {
+    padding: 300px 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0003;
+    min-height: 100vh;
+  }
+  
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgt {
+    display: flex;
+    height: 80%;
+    max-height: 600px;
+    margin: 0px -15%;
+    aspect-ratio: 1/1;
+    box-shadow: 5px 5px 25px #000d;
+    border-radius: 5px;
+    border: 1px solid #e14a0360;
+    z-index: -1;
+  }
+
+  .first {
+    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/young_pyra.png);
+    background-size: cover ;
+  }
+
+  .study {
+    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/pyra_studying.png);
+    background-size: cover ;
+  }
+
+  .errance {
+    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/pyra_errance.png);
+    background-size: cover ;
+  }
+  
+  .sad {
+    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/sad_pyra.png);
+    background-size: cover ;
+  }
+
+  .start {
+    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/start.png);
+    background-size: cover ;
+  }
+
+  .space {
+    margin:200px;
+    height:100px;
+  }
+
+  .design-section h4 {
+    text-align: right;
+  }
+
+  .timeline-content {
+    background: #1f1f1f;
+    -webkit-box-shadow: 5px 5px 10px #000a, -5px -5px 10px #1117;
+            box-shadow: 5px 5px 10px #000a, -5px -5px 10px #1117;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1rem 2rem 1rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-content p {
+    text-align: justify;
+  }
+
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, #b42914, #dd1b39, #e28600);
+      width: 3px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, #b42914, #dd1b39, #e28600);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+  }
+

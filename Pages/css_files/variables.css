@@ -18,9 +18,9 @@
 }
 
 .ambrosia {
-    --accent-color : #c01 ;
+    --accent-color : #790d1f ;
     --image-bg : url(../../images/character/ambrosia.png) ;
-    --portrait-image : radial-gradient(circle farthest-corner at 50% 200%, #0000 80%, #301  , var(--accent-color ) 100%), url('../../images/character-cards/ambrosia.png');
+    --portrait-image : radial-gradient(circle 600px at 50% 158%, #0000 80%, #301  , var(--accent-color ) 100%), url('../../images/character-cards/ambrosia.png');
     --bg-color : #1F110E ;
     --name-margin : 35px;
     --name-size : 330%;
