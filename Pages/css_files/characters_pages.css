@@ -198,18 +198,23 @@ imported from codepen https://codepen.io/Divyesh-K/pen/YzxLQNz */
     z-index: -1;
   }
 
+  .fullimg {
+    height: 100%;
+    padding: 10%;
+  }
+
   .first {
     background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/young_pyra.png);
     background-size: cover ;
   }
 
   .study {
-    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/pyra_studying.png);
+    background: linear-gradient(to right,#000, transparent 45%), url(../../images/pyra/pyra_studying.png);
     background-size: cover ;
   }
 
   .errance {
-    background: linear-gradient(to left,#000, transparent 45%), url(../../images/pyra/pyra_errance.png);
+    background: linear-gradient(to right,#000, transparent 45%), url(../../images/pyra/pyra_errance.png);
     background-size: cover ;
   }
   
@@ -223,9 +228,29 @@ imported from codepen https://codepen.io/Divyesh-K/pen/YzxLQNz */
     background-size: cover ;
   }
 
+  .hood {
+    background: url(../../images/pyra/hood.jpg);
+    background-size: cover ;
+  }
+
+  .last {
+    background: var(--image-bg);
+    background-size: cover ;
+  }
+
   .space {
-    margin:200px;
-    height:100px;
+    margin:150px;
+    height:10px;
+  }
+
+  .timeline-content li {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+
+  .fullsize {
+    margin:20% 10%;
+    min-height: 500px;
   }
 
   .design-section h4 {
