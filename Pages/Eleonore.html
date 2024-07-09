@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)"
+      href="DNDcss.css">
+      <link rel="stylesheet" type="text/css"
+      href="./css_files/eleo.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo-dnd-cropped.png">
+    <script src="https://kit.fontawesome.com/e4ce55f7e2.js" crossorigin="anonymous"></script>
+    <title>Éléonore Deepwave</title>
+    <meta name="author" content="Alice Vergeau">
+    <meta name="keywords" content="dnd, donjon, dragon, pyra">
+    <style>
+        /*add something from css file*/
+
+    </style>
+  </head>
+  <body>
+      <script>
+
+        function fade() {
+            
+            
+            if (window.scrollY > 1) {
+                document.getElementById("arrowAnim").style.visibility = "hidden";
+                document.getElementById("arrowAnim").style.opacity = "0";
+            } else {
+                document.getElementById("arrowAnim").style.visibility = "visible";
+                document.getElementById("arrowAnim").style.opacity = "1";
+            }
+        }
+
+
+        window.addEventListener("scroll", fade);
+
+        function openNav() {
+            document.getElementById("sidebar").style.opacity = "1";
+            document.getElementById("sidebar").style.visibility = "visible";
+            
+            document.getElementById("sidebar").style.transform = "translateX(0px)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.opacity = "0";
+            document.getElementById("sidebar").style.visibility = "hidden";
+            document.getElementById("sidebar").style.transform = "translateX(-200px)";
+
+        }
+
+    </script>
+    
+      
+    <div class="menu-bars">
+        <button class="bars" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <div class="header-container">
+        <header class="header2" id="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="../Home.html"><img class="logo" src="../images/logo-dnd-cropped.png"></a>
+
+
+
+            <nav role="navigation" class="sidenav">
+                <ul>
+                    <li><a href="#" aria-haspopup="true">Personnages</a>
+                        <hr>
+                        <ul class="dropdown" aria-label="submenu">
+                        <li><a href="Thyra.html">Thyra</a></li>
+                        <li><a href="Ambrosia.html">Ambrosia</a></li>
+                        <li><a href="Pyra.html">Pyra</a></li>
+                        <li><a href="Klomilia.html">Klomilia</a></li>
+                        <li><a href="Misha.html">Misha</a></li>
+                        <li><a href="Lya.html">Liannerya</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#">Campagnes</a>
+                        <hr>
+                        <ul>
+                            <li><a href="#">Marceline</a></li>
+                            <li><a href="#">Curse of Stradh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+    </div>
+      
+      
+      
+    <section class="banniere eleo">
+      <div class="banniere eleo">
+        <h1 class="gradient-text eleo">Éléonore
+          </h1> 
+          <h1 class="famille eleo"> Deepwave </h1>
+        </div>
+    </section>
+
+
+
+    </body>
+    </html>
+    

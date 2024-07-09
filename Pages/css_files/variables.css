@@ -86,6 +86,23 @@
     --banniere-pos : 50%;
 }
 
+.eleo {
+    --accent-color : #4b306d ;
+    --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 60%, #2c427b 80%,  var(--accent-color ) 90%), url('../../images/character/eleo_2.png');
+    --bg-color : #aaa1;
+    --name-margin : 100px 0px 32px;
+    --name-size : 400%;
+    --fam-name-size : 80%;
+    --transY : 20px;
+    --bg-position : bottom;
+    --bg-gradient : -webkit-linear-gradient(45deg, #a2b4db 25%, #2dc5e6 35%, #24519f 55%, #7b49aa 65%, #a2b4db 80%);
+    --title-pos : calc(100vh - 320px);
+    --imagefilter : #5477B800;
+    --color-neon : #389abc;
+    --image-bg : url('../../images/character/eleo.png');
+    --banniere-pos : top;
+}
+
 .misha {
     --accent-color : #eaa ;
     --portrait-image : radial-gradient(circle farthest-corner at 50% 100%,#0000 20%, #0000 60%, #523 75%,  var(--accent-color ) 100%), url('../../images/character/misha.png');

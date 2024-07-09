@@ -1,289 +1,346 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)" href="Pages/DNDcss.css">
-    <link rel="icon" type="image/x-icon" href="images/logo-dnd-cropped.png">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-width: 400px)"
+      href="Pages/DNDcss.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo-dnd-cropped.png" />
     <title>Donjon & Dragon</title>
-    <meta name="author" content="Alice Vergeau">
-    <meta name="keywords" content="dnd, donjon, dragon, thyra">
-    <script src="https://kit.fontawesome.com/e4ce55f7e2.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Alice Vergeau" />
+    <meta name="keywords" content="dnd, donjon, dragon, thyra" />
+    <script
+      src="https://kit.fontawesome.com/e4ce55f7e2.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-        /*add something from css file*/
-
+      /*add something from css file*/
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        
-        function moreCards() {
-            document.getElementById("hiddenCards").style.visibility = "visible";
-            document.getElementById("hiddenCards").style.position = "relative";
-            document.getElementById("button").style.visibility = "hidden";
-            
+      function moreCards() {
+        document.getElementById("hiddenCards").style.visibility = "visible";
+        document.getElementById("hiddenCards").style.position = "relative";
+        document.getElementById("button").style.visibility = "hidden";
+      }
+
+      function fade() {
+        if (window.scrollY > 1) {
+          document.getElementById("arrowAnim").style.visibility = "hidden";
+          document.getElementById("arrowAnim").style.opacity = "0";
+        } else {
+          document.getElementById("arrowAnim").style.visibility = "visible";
+          document.getElementById("arrowAnim").style.opacity = "1";
         }
+      }
 
-        function fade() {
-            
-            
-            if (window.scrollY > 1) {
-                document.getElementById("arrowAnim").style.visibility = "hidden";
-                document.getElementById("arrowAnim").style.opacity = "0";
-            } else {
-                document.getElementById("arrowAnim").style.visibility = "visible";
-                document.getElementById("arrowAnim").style.opacity = "1";
-            }
-        }
+      window.addEventListener("scroll", fade);
 
+      function openNav() {
+        document.getElementById("sidebar").style.opacity = "1";
+        document.getElementById("sidebar").style.visibility = "visible";
 
-        window.addEventListener("scroll", fade);
+        document.getElementById("sidebar").style.transform = "translateX(0px)";
+      }
 
-        function openNav() {
-            document.getElementById("sidebar").style.opacity = "1";
-            document.getElementById("sidebar").style.visibility = "visible";
-            
-            document.getElementById("sidebar").style.transform = "translateX(0px)";
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.opacity = "0";
-            document.getElementById("sidebar").style.visibility = "hidden";
-            document.getElementById("sidebar").style.transform = "translateX(-200px)";
-
-        }
-
+      function closeNav() {
+        document.getElementById("sidebar").style.opacity = "0";
+        document.getElementById("sidebar").style.visibility = "hidden";
+        document.getElementById("sidebar").style.transform =
+          "translateX(-200px)";
+      }
     </script>
 
-
     <div class="menu-bars">
-        <button class="bars" onclick="openNav()">
-            <i class="fa-solid fa-bars"></i></button>
+      <button class="bars" onclick="openNav()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
 
     <div class="header-container">
-        <header class="header2" id="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="../Home.html"><img class="logo" src="../images/logo-dnd-cropped.png"></a>
+      <header class="header2" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="../Home.html"
+          ><img class="logo" src="../images/logo-dnd-cropped.png"
+        /></a>
 
-
-
-            <nav role="navigation" class="sidenav">
-                <ul>
-                    <li><a href="#" aria-haspopup="true">Personnages</a>
-                        <hr>
-                        <ul class="dropdown" aria-label="submenu">
-                        <li><a href="Pages/Thyra.html">Thyra</a></li>
-                        <li><a href="Pages/Ambrosia.html">Ambrosia</a></li>
-                        <li><a href="Pages/Pyra.html">Pyra</a></li>
-                        <li><a href="Pages/Klomilia.html">Klomilia</a></li>
-                        <li><a href="Pages/Misha.html">Misha</a></li>
-                        <li><a href="Pages/Lya.html">Liannerya</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Campagnes</a>
-                        <hr>
-                        <ul>
-                            <li><a href="#">Marceline</a></li>
-                            <li><a href="#">Curse of Stradh</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-
-        </header>
+        <nav role="navigation" class="sidenav">
+          <ul>
+            <li>
+              <a href="#" aria-haspopup="true">Personnages</a>
+              <hr />
+              <ul class="dropdown" aria-label="submenu">
+                <li><a href="Pages/Thyra.html">Thyra</a></li>
+                <li><a href="Pages/Ambrosia.html">Ambrosia</a></li>
+                <li><a href="Pages/Pyra.html">Pyra</a></li>
+                <li><a href="Pages/Klomilia.html">Klomilia</a></li>
+                <li><a href="Pages/Misha.html">Misha</a></li>
+                <li><a href="Pages/Lya.html">Liannerya</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Campagnes</a>
+              <hr />
+              <ul>
+                <li><a href="#">Marceline</a></li>
+                <li><a href="#">Curse of Stradh</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
-
-
     <section class="background">
-        <div class="welcome"></div>
+      <div class="welcome"></div>
 
-        <div id="arrowAnim">
-            <div class="arrowSliding">
-                <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <div class="arrowSliding delay1">
-                <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <div class="arrowSliding delay2">
-                <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
+      <div id="arrowAnim">
+        <div class="arrowSliding">
+          <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
         </div>
+        <div class="arrowSliding delay1">
+          <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="arrowSliding delay2">
+          <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+      </div>
 
-        <nav role="navigation" class="horinav">
-            <ul>
-                <li><a href="../Home.html">Accueil</a></li>
-                <li><a href="#" aria-haspopup="true">Personnages</a>
-                    <ul class="dropdown" aria-label="submenu">
-                        <li><a href="Pages/Thyra.html">Thyra</a></li>
-                        <li><a href="Pages/Ambrosia.html">Ambrosia</a></li>
-                        <li><a href="Pages/Pyra.html">Pyra</a></li>
-                        <li><a href="Pages/Klomilia.html">Klomilia</a></li>
-                        <li><a href="Pages/Misha.html">Misha</a></li>
-                        <li><a href="Pages/Lya.html">Liannerya</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Campagnes</a>
-                    <ul>
-                        <li><a href="#">Marceline</a></li>
-                        <li><a href="#">Curse of Stradh</a></li>
-                    </ul>
-                </li>
+      <nav role="navigation" class="horinav">
+        <ul>
+          <li><a href="../Home.html">Accueil</a></li>
+          <li>
+            <a href="#" aria-haspopup="true">Personnages</a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="Pages/Thyra.html">Thyra</a></li>
+              <li><a href="Pages/Ambrosia.html">Ambrosia</a></li>
+              <li><a href="Pages/Pyra.html">Pyra</a></li>
+              <li><a href="Pages/Klomilia.html">Klomilia</a></li>
+              <li><a href="Pages/Misha.html">Misha</a></li>
+              <li><a href="Pages/Lya.html">Liannerya</a></li>
             </ul>
-        </nav>
+          </li>
+          <li>
+            <a href="#">Campagnes</a>
+            <ul>
+              <li><a href="#">Marceline</a></li>
+              <li><a href="#">Curse of Stradh</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </section>
     <main class="now">
-        <span class="icon"><i class="fa-solid fa-dice-d20"></i></span>
-        <h1>
-            Characters</h1>
+      <span class="icon"><i class="fa-solid fa-dice-d20"></i></span>
+      <h1>Characters</h1>
 
+      <section class="CardsContainer">
+        <a href="Pages/Pyra.html">
+          <div class="cards pyra">
+            <div class="portrait pyra">
+              <h4>Lost Braincells of Phandelvre</h4>
 
-        <section class="CardsContainer">
-            
-            <a href="Pages/Pyra.html">
-            <div class="cards pyra">
-                <div class="portrait pyra">
+              <h2>Pyra <span class="familyName">Del Ignis</span></h2>
 
-                    <h4>Lost Braincells of Phandelvre</h4>
+              <div class="hidCit">
+                <p>
+                  &laquo; En bref, Pyra c'est : <br />
+                  un savoir hors du commun, des capacités sociales pire
+                  qu'inexistantes, et l'amour de l’odeur du sang et des cendres.
+                  &raquo;
+                </p>
 
-                    <h2>Pyra <span class="familyName">Del Ignis</span></h2>
-                    
-                    <div class="hidCit">
-                        <p>&laquo; En bref, Pyra c'est : <br> un savoir hors du commun, des capacités sociales pire qu'inexistantes, et l'amour de l’odeur du sang et des cendres. &raquo;</p>
-                        
-                        <h5> Max, joueur</h5>
-                        
-                    </div>
-                    
-                    <h3>Fire genasi | Wizard 10</h3>
-                </div>
-                </div></a>
+                <h5>Max, joueur</h5>
+              </div>
 
-            <a href="Pages/Ambrosia.html">
-            <div class="cards ambrosia">
-                <div class="portrait ambrosia">
+              <h3>Fire genasi | Wizard 10</h3>
+            </div>
+          </div>
+        </a>
 
-                    <h4>Curse of Stradh</h4>
+        <a href="Pages/Thyra.html">
+          <div class="cards thyraa">
+            <div class="portrait thyraa">
+              <h4>
+                Marceline :
+                <span style="font-size: 80%">
+                  Rising of the Forgotten Royal
+                </span>
+              </h4>
 
-                    <h2 class="ambrosia">Ambrosia <span class="familyName">Ticâlitâ</span></h2>
-                    
-                    <div class="hidCit">
-                        <p>&laquo; Daddy issues, secrets et se prendre half-damage pour aucune raison, ne cherchez pas plus loin, c'est Ambrosia. &raquo;</p>
-                        
-                        <h5> Célestin, joueur</h5>
-                        
-                    </div>
-                    
-                    <h3 class="ambrosia">Dhampir | Rogue+ 11</h3>
-                </div>
-                </div></a>
-            
-            <a href="Pages/Thyra.html">
-             <div class="cards thyraa">
-                <div class="portrait thyraa">
+              <h2 class="thyraa">
+                Thyra <span class="familyName">af himlen Ulfbjørn</span>
+              </h2>
 
-                    <h4>Marceline : <span style="font-size:80%"> Rising of the Forgotten Royal </span></h4>
+              <div class="hidCit">
+                <p>
+                  &laquo; Les Weasley sauf que miraculeusement certains ont les
+                  cheveux qui sont devenus blancs. Oh et en viking aussi.
+                  &raquo;
+                </p>
 
-                    <h2 class="thyraa">Thyra <span class="familyName">af himlen Ulfbjørn</span></h2>
+                <h5>Alice, joueuse</h5>
+              </div>
 
-                    <div class="hidCit">
-                        <p>&laquo; Les Weasley sauf que miraculeusement certains ont les cheveux qui sont devenus blancs. Oh et en viking aussi. &raquo;</p>
-                        
-                        <h5> Alice, joueuse</h5>
-                        
-                    </div>
-                    
-                    <h3 class="thyraa">Air Genasi | Sorcerer 1</h3>
-                </div>
-                </div></a>
-            
-            <a href="Pages/Klomilia.html">
-            <div class="cards klomilia">
-                <div class="portrait klomilia">
+              <h3 class="thyraa">Air Genasi | Sorcerer 1</h3>
+            </div>
+          </div>
+        </a>
 
-                    <h4>Sang et Flammes</h4>
+        <a href="Pages/Ambrosia.html">
+          <div class="cards ambrosia">
+            <div class="portrait ambrosia">
+              <h4>Curse of Stradh</h4>
 
-                    <h2 class="klomilia">Klomilia <span class="familyName">Bronzegrace</span></h2>
+              <h2 class="ambrosia">
+                Ambrosia <span class="familyName">Ticâlitâ</span>
+              </h2>
 
-                     <div class="hidCit">
-                        <p>&laquo; - Alors, ça fait quoi de se transformer en monstre et de tuer plein de gens? <br> - Oh bah on s'y fait. &raquo;</p>
-                        
-                        <h5> L'allumette</h5>
-                        
-                    </div>
-                    
-                    <h3 class="klomilia">Gnome | Artificer 4</h3>
-                </div>
-                </div></a>
-            
-            <a href="Pages/Lya.html">
-            <div class="cards lya">
-                <div class="portrait lya">
+              <div class="hidCit">
+                <p>
+                  &laquo; Daddy issues, secrets et se prendre half-damage pour
+                  aucune raison, ne cherchez pas plus loin, c'est Ambrosia.
+                  &raquo;
+                </p>
 
-                    <h4>Curse of Stradh</h4>
+                <h5>Célestin, joueur</h5>
+              </div>
 
-                    <h2 class="lya">Liannerya <span class="familyName">Daldek</span></h2>
+              <h3 class="ambrosia">Dhampir | Rogue+ 11</h3>
+            </div>
+          </div>
+        </a>
 
-                    <div class="hidCit">
-                        <p>&laquo; RIP Lya, on t'aimait mais Stradh aussi. Aussi tu t'es légèrement suicidé soo tant pis pour toi. &raquo;</p>
-                        
-                        <h5> La Vie</h5>
-                        
-                    </div>
-                    
-                    <h3 class="lya">Half-Elf | Druide 5</h3>
-                </div>
-                </div></a> 
+        <a href="Pages/Klomilia.html">
+          <div class="cards klomilia">
+            <div class="portrait klomilia">
+              <h4>Sang et Flammes</h4>
 
-            <a href="Pages/Misha.html">
-            <div class="cards misha">
-                <div class="portrait misha">
+              <h2 class="klomilia">
+                Klomilia <span class="familyName">Bronzegrace</span>
+              </h2>
 
-                    <h4>Kampagn Pirates</h4>
+              <div class="hidCit">
+                <p>
+                  &laquo; - Alors, ça fait quoi de se transformer en monstre et
+                  de tuer plein de gens? <br />
+                  - Oh bah on s'y fait. &raquo;
+                </p>
 
-                    <h2 class="misha">Misha <span class="familyName">Le Singe</span></h2>
+                <h5>L'allumette</h5>
+              </div>
 
-                    <div class="hidCit">
-                        <p>&laquo; OUGH OUGH. HINHINHINHINHINHINHINHIN HOUN. OUGH OUGHY HOUHOUHOU &raquo;</p>
-                        
-                        <h5> Mère de Misha</h5>
-                        
-                    </div>
-                    
-                    <h3 class="misha">Monkey | Gunslinger 2</h3>
-                </div>
-                </div></a>
-            
+              <h3 class="klomilia">Gnome | Artificer 4</h3>
+            </div>
+          </div></a
+        >
+
+        <a href="Pages/Lya.html">
+          <div class="cards lya">
+            <div class="portrait lya">
+              <h4>Curse of Stradh</h4>
+
+              <h2 class="lya">
+                Liannerya <span class="familyName">Daldek</span>
+              </h2>
+
+              <div class="hidCit">
+                <p>
+                  &laquo; RIP Lya, on t'aimait mais Stradh aussi. Aussi tu t'es
+                  légèrement suicidé soo tant pis pour toi. &raquo;
+                </p>
+
+                <h5>La Vie</h5>
+              </div>
+
+              <h3 class="lya">Half-Elf | Druide 5</h3>
+            </div>
+          </div></a
+        >
+
+        <a href="Pages/Eleonore.html">
+          <div class="cards eleo">
+            <div class="portrait eleo">
+              <h4>Kraken</h4>
+
+              <h2 class="misha">
+                Éléonore <span class="familyName">Deepwave</span>
+              </h2>
+
+              <div class="hidCit">
+                <p>
+                  &laquo; C'est comme écouter l'océan chanter, avec chaque note
+                  qui nous emporte vers des profondeurs enchantées. &raquo;
+                </p>
+
+                <h5>un fan</h5>
+              </div>
+
+              <h3 class="misha">Coastal Merfolk | Bard 8</h3>
+            </div>
+          </div>
+        </a>
+
         <div class="hiddenCards" id="hiddenCards">
-            
-            <a href="Pages/valarei.html">
+          <a href="Pages/valarei.html">
             <div class="cards valarei">
-                <div class="portrait valarei" style="background-size: cover;">
+              <div class="portrait valarei" style="background-size: cover">
+                <h4>One Shot</h4>
 
-                    <h4>One Shot</h4>
+                <h2 class="valarei">
+                  Valarei <span class="familyName">Quorion</span>
+                </h2>
 
-                    <h2 class="valarei"> Valarei <span class="familyName">Quorion</span></h2>
+                <div class="hidCit">
+                  <p>
+                    &laquo; Une emo psychopathe avec des grand-maman issues:
+                    Quoi de mieux pour décrire la meilleur de toutes les amies?
+                    &raquo;
+                  </p>
 
-                    <div class="hidCit">
-                        <p>&laquo; Une emo psychopathe avec des grand-maman issues: Quoi de mieux pour décrire la meilleur de toutes les amies? &raquo;</p>
-                        
-                        <h5> Pinpin le Lapin </h5>
-                        
-                    </div>
-                    
-                    <h3 class="misha">Eladrin | Rogue 7</h3>
+                  <h5>Pinpin le Lapin</h5>
                 </div>
-                </div></a>
-            
-        </div>
 
-        </section>
-        
-        <button id="button" onclick="moreCards()" class="VoirPlus">See more</button>
+                <h3 class="misha">Eladrin | Rogue 7</h3>
+              </div>
+            </div>
+          </a>
+
+          <a href="Pages/Misha.html">
+            <div class="cards misha">
+              <div class="portrait misha">
+                <h4>Kampagn Pirates</h4>
+
+                <h2 class="misha">
+                  Misha <span class="familyName">Le Singe</span>
+                </h2>
+
+                <div class="hidCit">
+                  <p>
+                    &laquo; OUGH OUGH. HINHINHINHINHINHINHINHIN HOUN. OUGH OUGHY
+                    HOUHOUHOU &raquo;
+                  </p>
+
+                  <h5>Mère de Misha</h5>
+                </div>
+
+                <h3 class="misha">Monkey | Gunslinger 2</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <button id="button" onclick="moreCards()" class="VoirPlus">
+        See more
+      </button>
     </main>
     <!-- https://ddb.ac/characters/81502983/ITX0q9 -->
     <!--    style="background: linear-gradient(to right, rgba(255,255,255,0.6), #5599bb), url('../Thyra/thyra.png') ; " -->
-</body>
+  </body>
+</html>
